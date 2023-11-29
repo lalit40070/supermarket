@@ -34,7 +34,7 @@ class PostType extends AbstractType
                       'placeholder' => 'enter password here',
                 ] 
             ])
-            ->add ('save', SubmitType:: class, [
+            ->add ('submit', SubmitType:: class, [
                 'attr' => [
                 'class' => 'btn btn-success'
                 ]
