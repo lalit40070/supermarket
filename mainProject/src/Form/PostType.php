@@ -6,6 +6,7 @@ use App\Entity\Post;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 
 class PostType extends AbstractType
 {
@@ -32,6 +33,11 @@ class PostType extends AbstractType
                 'attr' => [
                       'placeholder' => 'enter password here',
                 ] 
+            ])
+            ->add ('save', SubmitType:: class, [
+                'attr' => [
+                'class' => 'btn btn-success'
+                ]
             ])
         ;
     }
