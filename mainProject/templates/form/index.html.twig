@@ -3,5 +3,7 @@
 {% block title %}Hello FormController!{% endblock %}
 
 {% block body %}
-{{ form(post_form) }}
+    {{ form_start(post_form, {'sttr': {'id': 'custom_post_form'}  }) }}
+        {{ form(post_form) }}
+    {{ form_end(post_form) }}
 {% endblock %}
