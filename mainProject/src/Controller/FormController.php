@@ -14,10 +14,10 @@ class FormController extends AbstractController
     {
         
         $post =new Post();
-        $post->setFirstName('enter first name');
-        $post->setLastName('enter last name');
-        $post->setEmail('enter Email id');
-        $post->setPassword('enter password');
+        // $post->setFirstName('enter first name');
+        // $post->setLastName('enter last name');
+        // $post->setEmail('enter Email id');
+        // $post->setPassword('enter password');
 
         $form = $this->createForm(PostType::class, $post);
         return $this->render('form/index.html.twig', [
